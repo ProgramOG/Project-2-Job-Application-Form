@@ -1,0 +1,146 @@
+/* Universal selection */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Body Selection */
+body {
+    background-color: grey;
+}
+
+/* Container Selection */
+
+#container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* Form box Selection  */
+
+.details-form {
+    max-width: 600px;
+    margin: 0 auto ;
+    background-color: antiquewhite;
+    /* margin-top: 50px; */
+    border-radius: 10px;
+    padding: 20px 20px;
+
+}
+
+/* Form Heading */
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* form items container */
+
+.form_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* single item class selection  */
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+}
+
+/* All lebel selection  */
+
+label {
+    font-size: 15px;
+}
+
+/* All inputs, selects, textareas slection */
+
+input,
+select,
+textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* input focus selection */
+
+input:focus {
+    outline-color: blueviolet;
+}
+
+/* Address container id selection */
+#textarea-div {
+    grid-column: 1/ span 2;
+}
+
+/* textarea selection of textarea-div container  */
+
+#textarea-div textarea {
+    width: 100%;
+}
+
+/* Address bar textarea focus selection */
+
+textarea#address_text:focus {
+    outline-color: blueviolet;
+}
+
+/* Select bar focus selection */
+
+select#job_role:focus {
+    outline-color: blueviolet;
+}
+
+/* Apply button container selection */
+
+.apply_button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+/* apply button selection */
+
+button {
+    background-color: blueviolet;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Media quaries for mobile view*/
+
+/* Media quaries of address bar textarea */
+
+@media (max-width:460px) {
+    #textarea-div {
+        grid-column: 1/ span 1;
+        padding-right: 20px;
+    }
+}
+
+/* Media quaries for right side padding in the form*/
+
+@media(max-width:460px) {
+    .form_control {
+        padding-right: 20px;
+    }
+}
+/* Media quaries for right side padding in the Button */
+
+@media(max-width:460px) {
+    .apply_button {
+        padding-right: 20px;
+    }
+}

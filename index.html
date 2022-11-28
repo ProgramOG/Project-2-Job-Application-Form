@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+
+    <!-- Linked CSS  -->
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- This is body -->
+
+  <body>
+
+    <!-- Body container -->
+
+    <div id="container">
+
+      <!-- Form details -->
+
+      <div class="details-form">
+
+        <!-- Form Heading -->
+
+        <h1>Application Form</h1>
+
+        <!-- Form items -->
+        
+        <form action="">
+
+          <!-- Form Container -->
+
+          <div class="form_container">
+
+            <!-- First Name container  -->
+
+            <div class="form_control" id="fn">
+              <label for="first_name">First Name</label>
+              <input
+                id="first_name"
+                name="first_name"
+                placeholder="Enter First Name..."
+              />
+            </div>
+
+            <!-- Last Name container  -->
+
+            <div class="form_control" id="ln">
+              <label for="last_name">Last Name</label>
+              <input
+                id="last_name"
+                name="last_name"
+                placeholder="Enter Last Name..."
+              />
+            </div>
+
+            <!-- Email container  -->
+
+            <div class="form_control" id="ema">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Your Email..."
+              />
+            </div>
+            <!-- Job Role container  -->
+
+            <div class="form_control" id="jr">
+              <label for="job_role">Select Job Role</label>
+
+              <!-- Job role select container -->
+
+              <select name="job_role" id="job_role">
+                <option value="" id="sjob" class="sj">Select Job Role</option>
+                <option value="android">Android Developer</option>
+                <option value="fronend">Frontend Developer</option>
+                <option value="backend">Backend Developer</option>
+                <option value="fullstack">Fullstack Developer</option>
+                <option value="ui_ux">UI UX Designer</option>
+                <option value="video">Video Editor</option>
+                <option value="photo">Photo Editor</option>
+              </select>
+            </div>
+
+            <!-- Address container  -->
+
+            <div class="form_control" id="textarea-div">
+              <label for="address_text">Address </label>
+              <textarea
+                id="address_text"
+                name="address_text"
+                placeholder="Enter Your Address..."
+                rows="4"
+                cols="50"
+              >
+              </textarea>
+            </div>
+
+            <!-- City container  -->
+
+            <div class="form_control" id="ct">
+              <label for="">City</label>
+              <input id="" name="" placeholder="Enter Your City" />
+            </div>
+
+            <!-- Pin Code container  -->
+
+            <div class="form_control" id="pin">
+              <label for="pin_code"> Pin Code</label>
+              <input
+                type="number"
+                id="pin_code"
+                name="pin_code"
+                placeholder="Enter Pin Code"
+              />
+            </div>
+
+            <!-- Date container  -->
+
+            <div class="form_control" id="dt">
+              <label for="date"> Date</label>
+              <input
+                value="2022-11-26"
+                type="date"
+                id="date"
+                name="date"
+                placeholder="Enter Date"
+              />
+            </div>
+
+            <!-- Upload file container  -->
+          </div>
+          <div class="form_control" id="uf">
+            <label for="upload_cv"> Upload CV</label>
+            <input type="file" id="upload_cv" name="upload_cv" />
+          </div>
+
+          <!-- Button container  -->
+
+          <div class="apply_button">
+            <button type="submit">Apply Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
